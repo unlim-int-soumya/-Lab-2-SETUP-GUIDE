@@ -68,9 +68,11 @@ To install C/C++ SDK on Windows 11, we needed to install the following additiona
 ![alt text](https://github.com/satyajeetburla/-Lab-2-SETUP-GUIDE/blob/main/Screen%20sort%20for%20Setup/Git/Git_7.png)
 The Toolchain installation was finally done.
 <br />
+
 **6. Getting the SDK and examples**<br />
 -After that we executed the below commands in the command line. We used Powershell
-![alt text](https://github.com/satyajeetburla/-Lab-2-SETUP-GUIDE/blob/main/Screen%20sort%20for%20Setup/Command%20Lines/1.png)<br />
+![alt text](https://github.com/satyajeetburla/-Lab-2-SETUP-GUIDE/blob/main/Screen%20sort%20for%20Setup/Command%20Lines/1.png)
+
 
 **7. Building "Hello World" from the Command Line**<br />
 -Then, from the Windows menu, we launched the Developer Command Prompt window by selecting Windows > Visual Studio 2022 > Developer Command Prompt for VS 2023 and and set the path as below. 
