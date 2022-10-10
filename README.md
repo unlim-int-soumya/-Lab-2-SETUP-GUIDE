@@ -1,10 +1,12 @@
 # Lab-2-SETUP-GUIDE
 
-SATYAJEET DAS
-LinkedIn: https://www.linkedin.com/in/satyajeet-das/
-Tested on:DELL Inspiron 16 Plus (16-inch, 2022), Windows 11 Home 21H2
+SATYAJEET DAS<br />
+LinkedIn: https://www.linkedin.com/in/satyajeet-das/<br />
+Tested on:DELL Inspiron 16 Plus (16-inch, 2022), Windows 11 Home 21H2<br />
 
-Setup Gide for SDK on your Windows Machine for Raspberry Pi Pico,
+
+**Setup Gide for SDK on your Windows Machine for Raspberry Pi Pico.**<br />
+
 This lab's prelab section covered how to become familiar with the various terminals and text editors available.
 
 However, in this lab, we had to install the SDK (Software Development Kits) for C/C++ in order to configure our PC for RP2040 development using Pico.
