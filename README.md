@@ -16,7 +16,7 @@ To install C/C++ SDK on Windows 11, we needed to install the following additiona
 
 
 
-1.ARM GNU Toolchain
+**1.ARM GNU Toolchain**
 
 - We downloaded the file 'arm-gnu-toolchain-12.2.MPACBTI-Bet1-mingw-w64-i686-arm-none-eabi.exe' mentioned below. 
 ![alt text](https://github.com/satyajeetburla/-Lab-2-SETUP-GUIDE/blob/main/Screen%20sort%20for%20Setup/ARM%20GNU/ARM%20GNU.png)
@@ -27,7 +27,7 @@ To install C/C++ SDK on Windows 11, we needed to install the following additiona
 ![alt text](https://github.com/satyajeetburla/-Lab-2-SETUP-GUIDE/blob/main/Screen%20sort%20for%20Setup/ARM%20GNU/ARM%20GNU_3.png)
 -  Now installation of ARM GNU Toolchain is done.
 
-2. CMake
+**2. CMake**
 
 - We downloaded the file '[cmake-3.24.2-windows-x86_64.msi](https://github.com/Kitware/CMake/releases/download/v3.24.2/cmake-3.24.2-windows-x86_64.msi)' mentioned below. 
 ![alt text](https://github.com/satyajeetburla/-Lab-2-SETUP-GUIDE/blob/main/Screen%20sort%20for%20Setup/CMake/CMake_1.png)
@@ -36,7 +36,7 @@ To install C/C++ SDK on Windows 11, we needed to install the following additiona
 - After that the installation process occurred smoothly. 
 ![alt text](https://github.com/satyajeetburla/-Lab-2-SETUP-GUIDE/blob/main/Screen%20sort%20for%20Setup/CMake/CMake_3.png)
 
-4. Build Tools for Visual Studio 2022
+**3. Build Tools for Visual Studio 2022**
 
 - In the next step of our process, We downloaded the file "[Build Tools for Visual Studio 2022](https://aka.ms/vs/17/release/vs_BuildTools.exe)" mentioned below.
 ![alt text](https://github.com/satyajeetburla/-Lab-2-SETUP-GUIDE/blob/main/Screen%20sort%20for%20Setup/VS%202022/VS_2022_1.png)
@@ -44,14 +44,14 @@ To install C/C++ SDK on Windows 11, we needed to install the following additiona
 ![alt text](https://github.com/satyajeetburla/-Lab-2-SETUP-GUIDE/blob/main/Screen%20sort%20for%20Setup/VS%202022/VS_2022_2.png)
 - After this the installation procedure was completed.
 
-6. Python 3.10
+**4. Python 3.10**
 
 - In the next step, We downloaded the file [Latest Python 3 Release - Python 3.10.7](https://www.python.org/downloads/release/python-3107/) 
 ![alt text](https://github.com/satyajeetburla/-Lab-2-SETUP-GUIDE/blob/main/Screen%20sort%20for%20Setup/Python/Python%201.png)
 - Following after downloading this file while installing it we chose "Add to Path" option. Because Adding Python to PATH makes it possible for you to run (use) Python from your command prompt (also known as command-line or cmd). 
 ![alt text](https://github.com/satyajeetburla/-Lab-2-SETUP-GUIDE/blob/main/Screen%20sort%20for%20Setup/Python/Python%202.png)
 
-8. Git
+**5. Git**
 - To follow the last step in Toolchain installation, We downloaded Git named as [64-bit Git for Windows Setup](https://github.com/git-for-windows/git/releases/download/v2.38.0.windows.1/Git-2.38.0-64-bit.exe). for our 64-bit PC.
 ![alt text](https://github.com/satyajeetburla/-Lab-2-SETUP-GUIDE/blob/main/Screen%20sort%20for%20Setup/Git/Git_1.png)
 - Following the download, we chose a few checklists depending on our preferences.
@@ -67,3 +67,28 @@ To install C/C++ SDK on Windows 11, we needed to install the following additiona
 - Lastly, we enabled experimental support for pseudo consoles. 
 ![alt text](https://github.com/satyajeetburla/-Lab-2-SETUP-GUIDE/blob/main/Screen%20sort%20for%20Setup/Git/Git_7.png)
 The Toolchain installation was finally done.
+
+**6. Getting the SDK and examples**
+-After that we executed the below commands in the command line. We used Powershell
+![alt text](https://github.com/satyajeetburla/-Lab-2-SETUP-GUIDE/blob/main/Screen%20sort%20for%20Setup/Command%20Lines/1.png)
+
+**7. Building "Hello World" from the Command Line**
+-Then, from the Windows menu, we launched the Developer Command Prompt window by selecting Windows > Visual Studio 2022 > Developer Command Prompt for VS 2023 and and set the path as below. 
+![alt text](https://github.com/satyajeetburla/-Lab-2-SETUP-GUIDE/blob/main/Screen%20sort%20for%20Setup/Command%20Lines/2.png)
+
+-Before proceeding, we closed our current Command Prompt window and opened a second Developer Command Prompt session where this environment variable will now be appropriately configured.
+
+-To construct the target, we proceeded to the pico-examples folder and generated the 'Hello World' example, as seen below. 
+![alt text](https://github.com/satyajeetburla/-Lab-2-SETUP-GUIDE/blob/main/Screen%20sort%20for%20Setup/Command%20Lines/3.png)
+
+-This generated elf, bin, and uf2 targets, which we can see within the build directory in the hello world/serial and hello world/usb directories. The UF2 binaries may be dragged and dropped straight onto an RP2040 board connected via USB to your PC.
+8. 
+**9. Flashing and Running "Hello World"**
+-Connect the Raspberry Pi Pico to your Raspberry Pi using a micro-USB cable, making sure that you hold down the
+BOOTSEL button to force it into USB Mass Storage Mode. 
+![alt text](https://github.com/satyajeetburla/-Lab-2-SETUP-GUIDE/blob/main/Screen%20sort%20for%20Setup/Flash/IMG-0601.jpg)
+- The board should automatically appear as a external drive. 
+- You can now drag-and-drop the UF2 binary onto the external drive.
+- The Raspberry Pi Pico will reboot, and unmount itself as an external drive, and start running the flashed code.
+- You can now see hello world being printed in the serial console.
+![alt text](https://github.com/satyajeetburla/-Lab-2-SETUP-GUIDE/blob/main/Screen%20sort%20for%20Setup/Flash/IMG-0602.jpg)
